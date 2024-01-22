@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "practical_1",
+            "cwd": "practical_1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "practical_1 (profile mode)",
+            "cwd": "practical_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "practical_1 (release mode)",
+            "cwd": "practical_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "practical_2",
+            "cwd": "practical_2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "practical_2 (profile mode)",
+            "cwd": "practical_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "practical_2 (release mode)",
+            "cwd": "practical_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "practical_3",
+            "cwd": "practical_3",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "practical_3 (profile mode)",
+            "cwd": "practical_3",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "practical_3 (release mode)",
+            "cwd": "practical_3",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
