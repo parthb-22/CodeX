@@ -5,6 +5,7 @@ import 'package:practical_5/screen3.dart';
 import 'package:practical_5/screen4.dart';
 import 'package:practical_5/screen5.dart';
 import 'package:practical_5/screen6.dart';
+import 'package:practical_5/screen7.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +17,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Screen6(),
+      debugShowCheckedModeBanner: false,
+      home: Screen7(),
     );
   }
 }
