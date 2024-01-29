@@ -75,6 +75,8 @@ flutter:
    - images/mongodb.png
    - images/oracle.png
    - images/maria.png
+   - images/CodeX.jpg
+   - images/logo.png
 
 
   # To add assets to your application, add an assets section, like this:

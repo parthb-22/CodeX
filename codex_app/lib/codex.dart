@@ -12,18 +12,36 @@ class _CodeXState extends State<CodeX> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(164, 128, 47, 194),
-        title: Text("CodeX",
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
+        toolbarHeight: 100,
+        backgroundColor: Color.fromARGB(156, 205, 5, 5),
+        // title: const Text("CodeX",
+        //     style: TextStyle(
+        //       fontSize: 25,
+        //       fontWeight: FontWeight.bold,
+        //     )),
+        leading: Container(
+            margin: EdgeInsets.only(left: 10),
+            padding: EdgeInsets.only(top: 10),
+            height: 100,
+            width: 100,
+            child: Image.asset(
+              "images/logo.png",
+              fit: BoxFit.cover,
             )),
+        title: Center(
+            child: Text(
+          "CodeX",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 30,
+              color: Color.fromARGB(255, 27, 1, 32)),
+        )),
         actions: [
           IconButton(
             onPressed: () {
               print("Search Box");
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           )
         ],
       ),
@@ -33,21 +51,24 @@ class _CodeXState extends State<CodeX> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Languages-",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic),
+            Container(
+              padding: const EdgeInsets.only(left: 10),
+              child: const Text(
+                "Languages-",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic),
+              ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -60,7 +81,7 @@ class _CodeXState extends State<CodeX> {
                     child:
                         Image.asset("images/Dart-logo.png", fit: BoxFit.cover),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -75,7 +96,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -90,7 +111,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -108,25 +129,28 @@ class _CodeXState extends State<CodeX> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text(
-              "Frameworks-",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
+            Container(
+              padding: const EdgeInsets.only(left: 10),
+              child: const Text(
+                "Frameworks-",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -141,7 +165,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -156,7 +180,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -171,7 +195,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -189,25 +213,28 @@ class _CodeXState extends State<CodeX> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text(
-              "Tools-",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
+            Container(
+              padding: const EdgeInsets.only(left: 10),
+              child: const Text(
+                "Tools-",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -222,7 +249,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -237,7 +264,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -252,7 +279,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -267,7 +294,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -285,25 +312,28 @@ class _CodeXState extends State<CodeX> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text(
-              "Databases-",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
+            Container(
+              padding: const EdgeInsets.only(left: 10),
+              child: const Text(
+                "Databases-",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -318,7 +348,7 @@ class _CodeXState extends State<CodeX> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(

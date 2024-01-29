@@ -61,9 +61,7 @@ class _InstagramState extends State<Instagram> {
                   Text("parth_2202",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                  SizedBox(
-                    width: 210,
-                  ),
+                  SizedBox(width: 210),
                   Container(
                     child: IconButton(
                         onPressed: () {
@@ -109,7 +107,7 @@ class _InstagramState extends State<Instagram> {
                         },
                         icon: Icon(Icons.send_rounded)),
                     SizedBox(
-                      width: 220,
+                      width: 200,
                     ),
                     IconButton(
                       onPressed: () {
@@ -143,7 +141,7 @@ class _InstagramState extends State<Instagram> {
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
                   SizedBox(
-                    width: 210,
+                    width: 200,
                   ),
                   Container(
                     child: IconButton(
@@ -190,7 +188,7 @@ class _InstagramState extends State<Instagram> {
                         },
                         icon: Icon(Icons.send_rounded)),
                     SizedBox(
-                      width: 220,
+                      width: 200,
                     ),
                     IconButton(
                         onPressed: () {
@@ -270,7 +268,7 @@ class _InstagramState extends State<Instagram> {
                         },
                         icon: Icon(Icons.send_rounded)),
                     SizedBox(
-                      width: 220,
+                      width: 200,
                     ),
                     IconButton(
                         onPressed: () {
