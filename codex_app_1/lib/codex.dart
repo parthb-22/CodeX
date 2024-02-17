@@ -1,4 +1,4 @@
-import 'package:codex_app/topicscreen.dart';
+import 'package:codex_app_1/Screen1.dart';
 import 'package:flutter/material.dart';
 
 class CodeX extends StatelessWidget {
@@ -16,6 +16,7 @@ class CodeX extends StatelessWidget {
     "Type casting",
     "Abstract Class"
   ];
+
   Widget reusableCard(
       BuildContext context, String name, String imageURL, List topicList) {
     return InkWell(
@@ -28,7 +29,7 @@ class CodeX extends StatelessWidget {
       child: Container(
         height: 130,
         width: 120,
-        margin: EdgeInsets.only(left: 10, right: 10),
+        margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 15),
         // child: Image.asset(imageURL),
         decoration: BoxDecoration(
             image:
@@ -36,7 +37,9 @@ class CodeX extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                  color: Colors.pink, offset: Offset(12, 15), blurRadius: 10)
+                  color: const Color.fromARGB(255, 9, 9, 9),
+                  offset: Offset(10, 10),
+                  blurRadius: 10)
             ]),
       ),
     );
@@ -45,31 +48,25 @@ class CodeX extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 238, 238, 238),
       appBar: AppBar(
         toolbarHeight: 80,
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
-        // title: const Text("CodeX",
-        //     style: TextStyle(
-        //       fontSize: 25,
-        //       fontWeight: FontWeight.bold,
-        //     )),
-        leading: Container(
-            margin: EdgeInsets.only(left: 10),
-            padding: EdgeInsets.only(top: 10),
-            height: 100,
-            width: 100,
-            child: Image.asset(
-              "images/logo.png",
-              fit: BoxFit.cover,
-            )),
-        title: Center(
-            child: Text(
+        backgroundColor: Colors.black,
+        title: Text(
           "CodeX",
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 30,
-              color: Color.fromARGB(255, 255, 255, 255)),
-        )),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+        ),
+        centerTitle: true,
+        leading: Container(
+          margin: EdgeInsets.only(left: 10),
+          padding: EdgeInsets.only(top: 10),
+          height: 100,
+          width: 100,
+          child: Image.asset(
+            "images/logo.png",
+            fit: BoxFit.cover,
+          ),
+        ),
         actions: [
           IconButton(
             onPressed: () {
@@ -146,17 +143,20 @@ class CodeX extends StatelessWidget {
                   fontStyle: FontStyle.italic),
             ),
           ),
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     children: [
-          //       reusableCard("images/mysql-img.png"),
-          //       reusableCard("images/oracle.png"),
-          //       reusableCard("images/mongodb.png"),
-          //       reusableCard("images/maria.png"),
-          //     ],
-          //   ),
-          // ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                reusableCard(
+                    context, "MySQL", "images/mysql-img.png", javaTopics),
+                reusableCard(
+                    context, "Oracle", "images/oracle.png", dartTopics),
+                reusableCard(
+                    context, "MongoDB", "images/mongodb.png", javaTopics),
+                reusableCard(context, "Maria", "images/maria.png", dartTopics),
+              ],
+            ),
+          ),
           Container(
             margin: EdgeInsets.only(top: 30),
             padding: const EdgeInsets.only(left: 10),
@@ -168,17 +168,20 @@ class CodeX extends StatelessWidget {
                   fontStyle: FontStyle.italic),
             ),
           ),
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     children: [
-          //       reusableCard("images/vs-logo.png"),
-          //       reusableCard("images/eclipse.png"),
-          //       reusableCard("images/git-img.png"),
-          //       reusableCard("images/github.png"),
-          //     ],
-          //   ),
-          // )
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                reusableCard(
+                    context, "VS Code", "images/vs-logo.png", dartTopics),
+                reusableCard(
+                    context, "Eclipse", "images/eclipse.png", javaTopics),
+                reusableCard(context, "Git", "images/git-img.png", dartTopics),
+                reusableCard(
+                    context, "GitHub", "images/github.png", javaTopics),
+              ],
+            ),
+          )
         ]),
       )),
     );
