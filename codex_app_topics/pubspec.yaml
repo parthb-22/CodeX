@@ -1,0 +1,46 @@
+name: codex_app_topics
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_highlighting: ^0.9.0+11.8.0
+  highlight: ^0.7.0
+  carousel_slider: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/logo.png
+    - images/Dart-logo.png
+    - images/java-14-logo.png
+    - images/js-logo.png
+    - images/Python-logo.png
+    - images/CodeX.jpg
+    - images/git-img.png
+    - images/eclipse.png
+    - images/flutter-logo.png
+    - images/github.png
+    - images/hibernate-logo.png
+    - images/maria.png
+    - images/mysql-img.png
+    - images/oracle.png
+    - images/postman.png
+    - images/react-logo.png
+    - images/spring-logo.png
+    - images/vs-logo.png
+    - images/mongodb.png
+    - images/google.png
+    - images/apple.png
+    - images/apple-logo.png
+
