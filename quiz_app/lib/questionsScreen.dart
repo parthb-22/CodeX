@@ -150,7 +150,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                     onPressed: () {
                       if (index < questions.length - 1) {
                         setState(() {
-                          index = index + 1;
+                          index++;
                         });
                       }
                     },

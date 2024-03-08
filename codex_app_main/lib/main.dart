@@ -1,4 +1,4 @@
-import 'package:codex_app_main/homepage.dart';
+import 'package:codex_app_main/loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
   }
 }

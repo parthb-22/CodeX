@@ -30,7 +30,6 @@ class CodeX extends StatelessWidget {
         height: 130,
         width: 120,
         margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 15),
-        // child: Image.asset(imageURL),
         decoration: BoxDecoration(
             image:
                 DecorationImage(image: AssetImage(imageURL), fit: BoxFit.cover),
