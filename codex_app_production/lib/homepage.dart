@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: 157,
               width: 353,
-              margin: EdgeInsets.only(left: 15, top: 30),
+              margin: EdgeInsets.only(left: 15, top: 30, bottom: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -226,6 +226,78 @@ class _HomePageState extends State<HomePage> {
                     margin: EdgeInsets.only(left: 50, top: 20),
                     child: Text(
                       "Flutter App Developmet",
+                      style: GoogleFonts.anekTamil(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 24,
+                          color: Colors.white),
+                    ),
+                  )
+                ],
+              ),
+              decoration: BoxDecoration(
+                // border: Border.all(color: Colors.black),
+                borderRadius: BorderRadius.circular(12),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color.fromRGBO(244, 132, 132, 1),
+                    Color.fromRGBO(153, 4, 4, 1)
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: 157,
+              width: 353,
+              margin: EdgeInsets.only(left: 15, top: 30, bottom: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(left: 20, top: 20),
+                        child: Text(
+                          "9th March 2024",
+                          style: GoogleFonts.anekTamil(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20,
+                              color: Colors.white),
+                        ),
+                      ),
+                      Container(
+                          margin: EdgeInsets.only(left: 80, top: 20),
+                          child: ElevatedButton(
+                              style: ButtonStyle(
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(8)))),
+                              onPressed: () {},
+                              child: Text(
+                                "Join Demo",
+                                style: GoogleFonts.anekTamil(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 15,
+                                ),
+                              )))
+                    ],
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20, top: 12),
+                    child: Text(
+                      "10 am - 12 am",
+                      style: GoogleFonts.anekTamil(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 30, top: 20),
+                    child: Text(
+                      "Java Full Stack Development",
                       style: GoogleFonts.anekTamil(
                           fontWeight: FontWeight.w500,
                           fontSize: 24,
